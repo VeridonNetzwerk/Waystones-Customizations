@@ -1,0 +1,46 @@
+# Gradle
+.gradle/
+build/
+*/build/
+.kotlin/
+local.properties
+
+# Dev runs (game worlds, configs, logs, crash reports)
+run/
+*/run/
+runs/
+logs/
+crash-reports/
+*.log
+hs_err_pid*.log
+
+# Built jars (published as releases instead)
+dist/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Publishing notes (kept local)
+publishing/HOCHLADEN.md
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse / VS Code
+.classpath
+.project
+.settings/
+bin/
+.vscode/
+
+# Python (icon tools)
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

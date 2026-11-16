@@ -1,0 +1,37 @@
+plugins {
+    id 'net.fabricmc.fabric-loom'
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+
+    // Waystones (+ its library Balm) – needed to compile the mixins and to test in dev
+    implementation "net.blay09.mods:waystones-fabric:${waystones_version}"
+    implementation "net.blay09.mods:balm-fabric:${balm_version}"
+}
+
+loom {
+    runs {
+        // dev/test runs fail if any hook does not apply (release jars just skip broken hooks)
+        configureEach {
+            vmArg '-Dmixin.debug.countInjections=true'
+        }
+        client {
+            client()
+            runDir 'run'
+        }
+    }
+}
+
+// Automated in-game screenshots: gradlew :fabric:runClientGameTest
+fabricApi {
+    configureTests {
+        createSourceSet = true
+        modId = "waystonescustomizations-test"
+        enableGameTests = false
+        enableClientGameTests = true
+        eula = true
+    }
+}

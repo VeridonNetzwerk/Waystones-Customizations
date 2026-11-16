@@ -1,0 +1,33 @@
+plugins {
+    id 'net.neoforged.moddev'
+}
+
+neoForge {
+    version = neo_version
+
+    runs {
+        client {
+            client()
+            gameDirectory = project.file('run')
+        }
+        // Starts the game, checks that all hooks apply, then quits: gradlew :neoforge:runSmokeTest
+        smokeTest {
+            client()
+            gameDirectory = project.file('run')
+            systemProperty 'waystonescustomizations.smoketest', 'true'
+            // fail if any hook does not apply (release jars just skip broken hooks)
+            systemProperty 'mixin.debug.countInjections', 'true'
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+dependencies {
+    implementation "net.blay09.mods:waystones-neoforge:${waystones_version}"
+    implementation "net.blay09.mods:balm-neoforge:${balm_version}"
+}

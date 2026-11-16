@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.waystonescustomizations.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AbstractWaystoneListMixin",
+    "ContainerScreenInputMixin",
+    "GroupEditScreenInputMixin",
+    "GroupIconRenderMixin",
+    "ScreenMixin",
+    "WaystoneButtonMixin",
+    "WaystoneContainerScreenMixin",
+    "WaystoneGroupEditScreenMixin",
+    "WaystoneGroupIconButtonMixin",
+    "WaystoneGroupIconsMixin",
+    "WaystoneScreenInputMixin",
+    "WaystoneSelectionScreenBaseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

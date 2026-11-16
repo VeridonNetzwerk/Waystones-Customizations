@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "${mod_license}"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_author}"
+description = '''${mod_description}'''
+logoFile = "waystonescustomizations_icon.png"
+
+[[mixins]]
+config = "waystonescustomizations.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "${neo_mc_range}"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.${mod_id}]]
+modId = "waystones"
+type = "required"
+versionRange = "*"
+ordering = "AFTER"
+side = "CLIENT"
