@@ -6,6 +6,11 @@
   "description": "${mod_description}",
   "authors": ["${mod_author}"],
   "license": "${mod_license}",
+  "contact": {
+    "homepage": "https://github.com/VeridonNetzwerk/Waystones-Customizations",
+    "sources": "https://github.com/VeridonNetzwerk/Waystones-Customizations",
+    "issues": "https://github.com/VeridonNetzwerk/Waystones-Customizations/issues"
+  },
   "icon": "waystonescustomizations_icon.png",
   "environment": "client",
   "entrypoints": {

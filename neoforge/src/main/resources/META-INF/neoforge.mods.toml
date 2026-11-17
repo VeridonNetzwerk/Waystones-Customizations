@@ -1,6 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[1,)"
 license = "${mod_license}"
+issueTrackerURL = "https://github.com/VeridonNetzwerk/Waystones-Customizations/issues"
 
 [[mods]]
 modId = "${mod_id}"
@@ -9,6 +10,7 @@ displayName = "${mod_name}"
 authors = "${mod_author}"
 description = '''${mod_description}'''
 logoFile = "waystonescustomizations_icon.png"
+displayURL = "https://github.com/VeridonNetzwerk/Waystones-Customizations"
 
 [[mixins]]
 config = "waystonescustomizations.mixins.json"

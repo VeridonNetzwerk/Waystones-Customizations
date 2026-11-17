@@ -11,6 +11,7 @@ Backgrounds use the block textures of your game, so they match your resource pac
 
 ### 🖌️ A background for every waystone
 Hover an entry and click the brush (or right click it). Pick the group colour, one of 16 colours, 70+ block textures or your own picture, for one waystone or for a whole group.
+Pick a **text colour** the same way. Whole groups can also be styled right in the group editor with the **Entry style** button.
 By default every entry is tinted in its group colour, so you can tell your bases, farms and dungeons apart at a glance.
 
 ### 🏰 48 hand-drawn group icons
@@ -24,7 +25,8 @@ Drop a PNG into `config/waystonescustomizations/icons` or `config/waystonescusto
 
 ---
 
-**Requires:** Waystones
+**Requires:** Waystones (and Balm, which Waystones needs anyway; Fabric API on Fabric)
 **Side:** client only (servers don't need it). Group icons are stored on the server by Waystones, so other players need this mod to see our icons. Your own pictures are only visible to players with the same file.
 **Loaders:** Fabric and NeoForge
 **Versions:** 26.1.2, 26.2, 26.3
+**Source & issues:** [github.com/VeridonNetzwerk/Waystones-Customizations](https://github.com/VeridonNetzwerk/Waystones-Customizations)
